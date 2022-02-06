@@ -1,0 +1,95 @@
+/**
+2
+ * You can edit, run, and share this code.
+3
+ * play.kotlinlang.org
+4
+ */
+5
+​
+6
+fun main() {
+7
+    println(esFina("bac"))
+8
+    println(esFina("aza"))
+9
+    println(esFina("abaca"))
+10
+    println(esFina("baaa"))
+11
+    println(esFina("aab"))
+12
+}
+13
+// otro metodo
+14
+fun esVocal(c: Char): Boolean{
+15
+    if(c =='a' || c=='e' || c=='i' || c=='o' || c=='u'){
+16
+        return true
+17
+    }else{
+18
+        return false
+19
+    }
+20
+}
+21
+// otro metodo
+22
+fun  esFina(cadena: String): Boolean{
+23
+    var condiciones =0
+24
+        
+25
+    if(!cadena.contains("be") && !cadena.contains("bu") && !cadena.contains("be")){
+26
+        condiciones++
+27
+    }
+28
+    var vocales =0
+29
+    for (c in cadena){
+30
+        if(esVocal(c)){
+31
+            vocales++
+32
+        }
+33
+    }
+34
+    if(vocales >=3)condiciones++
+35
+    
+36
+    for (i in 0 until cadena.length ){
+37
+        if(i < cadena.length-1){
+38
+            if(cadena.get(i)==cadena.get(i+1)){
+39
+            condiciones++
+40
+                break
+41
+            }
+42
+        }
+43
+        
+44
+    }
+45
+    
+46
+    return (condiciones >=2)
+47
+    
+48
+    
