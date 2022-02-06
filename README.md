@@ -6,6 +6,6 @@ Asignación 3: Cadena Fina
 
 Asignación 4: Calculadora IMC
 
-#Kevin Enrique Ibarra Paez
+Kevin Enrique Ibarra Paez
 
-#Enrique Jiménez Marín
+Enrique Jiménez Marín
